@@ -1,0 +1,35 @@
+div{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: red;
+    position: relative;
+    animation: movbox;
+    animation-duration: 10s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+}
+@keyframes movbox{
+    0%{background-color: blue;left: 0px;top: 0px;}
+    25%{background-color: green;left: 400px;top: 0px;}
+    50%{background-color: purple;left:400px ;top: 400px;}
+    75%{background-color: aqua;left: 0px;top: 400px;}
+    100%{background-color: blue;left: 0px;top: 0px;}
+}
+h1{
+    width: 400px;
+    height: 400px;
+    animation: movimage;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    position: relative;
+    border-radius: 10px;
+}
+@keyframes movimage{
+    0%{background-image: url('/img/leaf.png.png');}
+    25%{background-image: url('/img/starry\ sky.jpg');}
+    50%{background-image: url('/img/dog-7019418_640.jpg');}
+    75%{background-image: url('/img/car.png.png');}
+    100%{background-image: url('/img/leaf.png.png');}
+}
